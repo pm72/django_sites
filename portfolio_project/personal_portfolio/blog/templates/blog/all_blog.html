@@ -10,6 +10,11 @@
 <body>
   <div>
     <h1>Hello, blog</h1>
+    {% for blog in blogs %}
+      <h2>{{ blog.title }}</h2>
+      <h5>{{ blog.date }}</h5>
+      <p>{{ blog.description }}</p>
+    {% endfor %}
   </div>
 </body>
 </html>
